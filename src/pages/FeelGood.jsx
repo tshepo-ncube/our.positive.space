@@ -121,7 +121,7 @@ export default function FeelGood() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 ,marginTop:2,marginBottom:7}}>
+    <Box sx={{ flexGrow: 1 ,marginTop:2,marginBottom:14}}>
       <Grid container spacing={2}>
         <Grid item   xs={12} sm={12} md={12} lg={8}>
           <Item style={{height:400}}>
