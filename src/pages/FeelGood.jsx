@@ -121,13 +121,13 @@ export default function FeelGood() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 ,marginTop:2}}>
       <Grid container spacing={2}>
         <Grid item   xs={12} sm={12} md={12} lg={8}>
           <Item style={{height:400}}>
            
 
-                <Button size="small" onClick={affirmationEvent} style={{color:'white',background: 'linear-gradient(45deg, #FF4081,#eeaeca)'}}>
+                <Button size="small" onClick={affirmationEvent} style={{color:'white',background: 'linear-gradient(45deg, #FF4081,#eeaeca)',marginTop:65}}>
                   
                  
 

@@ -26,6 +26,29 @@ import { Typography } from '@mui/material';
 import FeelGood from './pages/FeelGood';
 // import FeelGood from './pages/FeelGood';
 
+const styles = {
+  div: {
+    backgroundColor: '#fff',
+    maxWidth: '600px',
+    margin: '0 auto',
+    padding: '20px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    borderRadius: '5px',
+  },
+  h1: {
+    color: '#333',
+    fontSize: '24px',
+    margin: '0 0 20px',
+  },
+  p: {
+    color: '#666',
+    fontSize: '16px',
+    lineHeight: '1.5',
+    margin: '0 0 15px',
+  },
+};
+
+
 function App() {
 
   const [activeTab, setActiveTab] = useState('feel-good'); // Initialize with 'home'
@@ -47,11 +70,11 @@ function App() {
           <Navbar.Brand href="#feel-good"><Typography variant='h5' style={{fontFamily:"cursive"}}><strong>Our Positive Space</strong></Typography></Navbar.Brand>
           <Nav className="me-auto" activeKey={activeTab} onSelect={handleNavClick}>
             <Nav.Link eventKey="feel-good" href="#feel-good">
-              Feel Good Chat
+              home
             </Nav.Link>
-            <Nav.Link eventKey="blog" href="#blog">
-              Positivity Blog
-            </Nav.Link>
+            {/* <Nav.Link eventKey="blog" href="#blog">
+              blog
+            </Nav.Link> */}
             {/* <Nav.Link eventKey="stories" href="#stories">
               Stories
             </Nav.Link> */}
@@ -61,13 +84,17 @@ function App() {
 
    
 
-    {activeTab === 'blog' && (
+    {activeTab === 'about' && (
             <Container>
-              {/* Content to display when 'Stories' is selected */}
-              <div>
-                <h2>Positivity Blog</h2>
-                {/* Add your content here */}
-              </div>
+                      <div style={styles.div}>
+              <h1 style={styles.h1}>The Power of Affirmations</h1>
+              <p style={styles.p}>
+                Affirmations are positive statements that can transform your mindset and well-being. They work by reshaping your thoughts and beliefs, promoting self-confidence, reducing stress, and increasing motivation.
+              </p>
+              <p style={styles.p}>
+                Create effective affirmations by making them positive, present-tense, and specific. Repeat them daily for the best results. Belief in your affirmations is essential for their success.
+              </p>
+    </div>
             </Container>
           )}
 
