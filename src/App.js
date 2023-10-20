@@ -24,6 +24,7 @@ import { useState } from 'react';
 // import ExamplesGrid from './ExamplesGrid';
 import { Typography } from '@mui/material';
 import FeelGood from './pages/FeelGood';
+import Footer from './components/Footer';
 // import FeelGood from './pages/FeelGood';
 
 const styles = {
@@ -112,6 +113,8 @@ function App() {
               </Container>
             )}
 
+
+    <Footer/>
       </div>
   );
 }
